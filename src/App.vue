@@ -3,9 +3,15 @@ import { ref, computed } from 'vue'
 import Home from './components/Home.vue'
 import About from './components/About.vue'
 import NotFound from './components/NotFound.vue'
+import RL from './components/RL.vue';
+import CS from './components/CS.vue'
+import TK from './components/TK.vue'
 
 const routes: Record<string, any> =  {
   '/': Home,
+  '/cs': CS,
+  '/rl' : RL,
+  '/tk' : TK,
   '/about': About
 }
 
@@ -21,7 +27,10 @@ const currentView = computed(() => {
 </script>
 
 <template>
-    <a href="#/">Home</a> |
+  <a href="#/">Home</a> |
+  <a href="#/cs">Counter Strike</a> |
+  <a href="#/rl">Rocket League</a> |
+  <a href="#/tk">Tekken</a> |
   <a href="#/about">About</a> |
   <a href="#/non-existent-path">Broken Link</a>
   <component :is="currentView" />
