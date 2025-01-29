@@ -1,17 +1,30 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import { ref, computed } from 'vue'
+import Home from './components/Home.vue'
+import About from './components/About.vue'
+import NotFound from './components/NotFound.vue'
+
+const routes: Record<string, any> =  {
+  '/': Home,
+  '/about': About
+}
+
+const currentPath = ref(window.location.hash)
+
+window.addEventListener('hashchange', () => {
+  currentPath.value = window.location.hash
+})
+
+const currentView = computed(() => {
+  return routes[currentPath.value.slice(1) || '/'] || NotFound
+})
 </script>
 
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+    <a href="#/">Home</a> |
+  <a href="#/about">About</a> |
+  <a href="#/non-existent-path">Broken Link</a>
+  <component :is="currentView" />
 </template>
 
 <style scoped>
