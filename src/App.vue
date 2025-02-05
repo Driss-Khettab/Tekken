@@ -27,26 +27,57 @@ const currentView = computed(() => {
 </script>
 
 <template>
-  <a href="#/">Home</a> |
-  <a href="#/cs">Counter Strike</a> |
-  <a href="#/rl">Rocket League</a> |
-  <a href="#/tk">Tekken</a> |
-  <a href="#/about">About</a> |
-  <a href="#/non-existent-path">Broken Link</a>
-  <component :is="currentView" />
+  <div class="nav-bar">
+    <a class="link" href="#/">Home</a> |
+    <a class="link" href="#/cs">Counter Strike</a> |
+    <a class="link" href="#/rl">Rocket League</a> |
+    <a class="link" href="#/tk">Tekken</a> |
+    <a class="link" href="#/about">About</a> |
+    <a class="link" href="#/non-existent-path">Broken Link</a>
+  </div>
+
+  <div class="page-container">
+    <component :is="currentView" />
+  </div>
 </template>
 
+
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.page-container {
+  /* background-image: url('./assets/TrackerBG.webp'); 
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;  */
+  background-color: #060708;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 100vh;
+  padding-top: 12vh;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+
+.nav-bar {
+  position: fixed;
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  max-width: 800px;
+  height: 5vh;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid black;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1%;
+  z-index: 1000;
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+.link{
+  color: black;
 }
+
 </style>

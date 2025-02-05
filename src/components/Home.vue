@@ -1,41 +1,101 @@
 <script setup lang="ts">
-import { ref } from 'vue'
 
-defineProps<{ msg: string }>()
 
-const count = ref(0)
 </script>
 
+
 <template>
-  <h1>{{ msg }}</h1>
 
+  <div class="main-container">
+
+    <div class="data-container">
+      <span class="lowlight">INSIGHT TO <br></span>
+      <span class="highlight">EVOLVE YOUR GAME</span> <span class="lowlight"> AND</span> 
+      <span class="lowlight"> AND SO MUCH <br> MORE.</span> 
+    </div>
+
+  <div class="card-container">
   <div class="card">
-    <button type="button" @click="count++">count is {{ count }}</button>
-    <p>
-      Edit
-      <code>components/HelloWorld.vue</code> to test HMR
-    </p>
+    <button type="button">
+      <img src="../assets/cs2.webp" alt="yes" class="homeImg" > 
+    </button>
   </div>
-
-  <p>
-    Check out
-    <a href="https://vuejs.org/guide/quick-start.html#local" target="_blank"
-      >create-vue</a
-    >, the official Vue + Vite starter
-  </p>
-  <p>
-    Learn more about IDE Support for Vue in the
-    <a
-      href="https://vuejs.org/guide/scaling-up/tooling.html#ide-support"
-      target="_blank"
-      >Vue Docs Scaling up Guide</a
-    >.
-  </p>
-  <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
+  <div class="card">
+    <button type="button">
+      <img src="../assets/league-of-legends.webp" alt="yes" class="homeImg"> 
+    </button>
+  </div>
+  <div class="card">
+    <button type="button">
+      <img src="../assets/rocket-league.webp" alt="yes" class="homeImg"> 
+    </button>
+  </div>
+  <div class="card">
+    <button type="button">
+      <img src="../assets/tekken8.webp" alt="yes" class="homeImg"> 
+    </button>
+  </div>
+</div>
+</div>
 </template>
 
 <style scoped>
-.read-the-docs {
-  color: #888;
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+.main-container {
+  display: flex;
+  width: 100vw; 
+  height: 100vh; 
+  gap:20px;
 }
+
+.data-container {
+  flex: 1.5; 
+  flex-direction: column;
+  border: 1px solid black;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-left: 2%;
+  background-color: #18191c;
+  padding: 5px 2.5rem 2.5rem;
+  top:0;
+  position: sticky;
+  text-align: left;
+}
+
+.card-container {
+  flex: 3; 
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20%;
+}
+
+.homeImg{
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.lowlight{
+  color:#9aa4b8;
+  font-weight: 700;
+  font-size: 5rem;
+}
+
+.highlight{
+  background-color: #e2263c;
+  color:white;
+  font-weight: 700;
+  font-size: 5rem;
+}
+
+.lowlight, .highlight {
+  font-family: 'Rajdhani', sans-serif;
+}
+
 </style>
