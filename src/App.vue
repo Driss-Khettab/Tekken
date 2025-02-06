@@ -6,11 +6,13 @@ import NotFound from './components/NotFound.vue'
 import RL from './components/RL.vue';
 import CS from './components/CS.vue'
 import TK from './components/TK.vue'
+import LOL from './components/LOL.vue'
 
 const routes: Record<string, any> =  {
   '/': Home,
   '/cs': CS,
   '/rl' : RL,
+  '/lol' : LOL,
   '/tk' : TK,
   '/about': About
 }
@@ -31,9 +33,9 @@ const currentView = computed(() => {
     <a class="link" href="#/">Home</a> |
     <a class="link" href="#/cs">Counter Strike</a> |
     <a class="link" href="#/rl">Rocket League</a> |
+    <a class="link" href="#/lol">League Of Legends</a> |
     <a class="link" href="#/tk">Tekken</a> |
     <a class="link" href="#/about">About</a> |
-    <a class="link" href="#/non-existent-path">Broken Link</a>
   </div>
 
   <div class="page-container">
