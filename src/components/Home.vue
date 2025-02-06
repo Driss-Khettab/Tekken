@@ -35,6 +35,46 @@
       <img src="../assets/tekken8.webp" alt="yes" class="homeImg"> 
     </button>
   </div>
+  <div class="card">
+    <button type="button">
+      <img src="../assets/cs2.webp" alt="yes" class="homeImg" > 
+    </button>
+  </div>
+  <div class="card">
+    <button type="button">
+      <img src="../assets/league-of-legends.webp" alt="yes" class="homeImg"> 
+    </button>
+  </div>
+  <div class="card">
+    <button type="button">
+      <img src="../assets/rocket-league.webp" alt="yes" class="homeImg"> 
+    </button>
+  </div>
+  <div class="card">
+    <button type="button">
+      <img src="../assets/tekken8.webp" alt="yes" class="homeImg"> 
+    </button>
+  </div>
+  <div class="card">
+    <button type="button">
+      <img src="../assets/cs2.webp" alt="yes" class="homeImg" > 
+    </button>
+  </div>
+  <div class="card">
+    <button type="button">
+      <img src="../assets/league-of-legends.webp" alt="yes" class="homeImg"> 
+    </button>
+  </div>
+  <div class="card">
+    <button type="button">
+      <img src="../assets/rocket-league.webp" alt="yes" class="homeImg"> 
+    </button>
+  </div>
+  <div class="card">
+    <button type="button">
+      <img src="../assets/tekken8.webp" alt="yes" class="homeImg"> 
+    </button>
+  </div>
 </div>
 </div>
 </template>
@@ -47,6 +87,7 @@
   display: flex;
   width: 100vw; 
   height: 100vh; 
+  margin-bottom: 20%;
   gap:20px;
 }
 
@@ -63,17 +104,19 @@
   top:0;
   position: sticky;
   text-align: left;
+  height: 120%;
 }
 
 .card-container {
   flex: 3; 
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: center; */
   align-items: center;
   gap: 10px;
   margin-bottom: 20%;
+  margin-left:40px
 }
+
 
 .homeImg{
   width: 150px;
