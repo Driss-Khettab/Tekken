@@ -3,17 +3,17 @@ import { ref, computed } from 'vue'
 import Home from './components/Home.vue'
 import About from './components/About.vue'
 import NotFound from './components/NotFound.vue'
-import RL from './components/RL.vue';
+import RL from './components/RL.vue'
 import CS from './components/CS.vue'
 import TK from './components/TK.vue'
 import LOL from './components/LOL.vue'
 
-const routes: Record<string, any> =  {
+const routes: Record<string, any> = {
   '/': Home,
   '/cs': CS,
-  '/rl' : RL,
-  '/lol' : LOL,
-  '/tk' : TK,
+  '/rl': RL,
+  '/lol': LOL,
+  '/tk': TK,
   '/about': About
 }
 
@@ -25,6 +25,17 @@ window.addEventListener('hashchange', () => {
 
 const currentView = computed(() => {
   return routes[currentPath.value.slice(1) || '/'] || NotFound
+})
+
+const backgroundClass = computed(() => {
+  switch (currentPath.value) {
+    case '#/cs': return 'bg-cs'
+    case '#/rl': return 'bg-rl'
+    case '#/lol': return 'bg-lol'
+    case '#/tk': return 'bg-tk'
+    case '#/about': return 'bg-about'
+    default: return 'bg-default'
+  }
 })
 </script>
 
@@ -38,27 +49,45 @@ const currentView = computed(() => {
     <a class="link" href="#/about">About</a> |
   </div>
 
-  <div class="page-container">
+  <div class="page-container" :class="backgroundClass">
     <component :is="currentView" />
   </div>
 </template>
 
-
 <style scoped>
 .page-container {
-  /* background-image: url('./assets/TrackerBG.webp'); 
-  background-size: cover;
-  background-position: center; 
-  background-repeat: no-repeat;  */
-  background-color: #060708;
   position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
   min-height: 100vh;
   padding-top: 12vh;
+  transition: background-color 0.5s ease-in-out;
 }
 
+.bg-default {
+  background-color: #060708;
+}
+
+.bg-cs {
+  background-color: #2a2a2a;
+}
+
+.bg-rl {
+  background-color: #1d3557;
+}
+
+.bg-lol {
+  background: linear-gradient(to right, #391618, #961929);
+}
+
+.bg-tk {
+  background-color: #b71c1c;
+}
+
+.bg-about {
+  background-color: #004d40;
+}
 
 .nav-bar {
   position: fixed;
@@ -78,8 +107,7 @@ const currentView = computed(() => {
   z-index: 1000;
 }
 
-.link{
+.link {
   color: black;
 }
-
 </style>
