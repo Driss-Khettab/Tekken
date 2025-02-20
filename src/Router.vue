@@ -1,7 +1,7 @@
 <script setup>
 import { ref, computed } from 'vue'
 import Home from './Home.vue'
-import About from './About.vue'
+import About from './components/About.vue'
 import NotFound from './NotFound.vue'
 
 const routes = {
