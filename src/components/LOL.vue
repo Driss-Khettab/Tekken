@@ -81,6 +81,37 @@ defineProps<{ msg: string }>()
         </div>
       </div>
   </div>
+  <section class="checkpoint_news">
+  <div class="section-container">
+    <div class="checkpoint_intro">
+      <div class="checkpoint_title">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="checkpoint__title-icon"><path d="M5.6 2a.46.46 0 0 0-.4.5.37.37 0 0 0 .1.3l1.3 1.7v15.2l-1.7 1.7a.377.377 0 0 0 .1.6h13.4a.76.76 0 0 0 .4-.2l2.3-2.3a.377.377 0 0 0-.1-.6.37.37 0 0 0-.3-.1h-9.5V2.5a.472.472 0 0 0-.5-.5ZM12 3.8v.9a8.237 8.237 0 0 1 8.2 8.2 7.96 7.96 0 0 1-1.7 5h1.1a8.9 8.9 0 0 0 1.5-5A9.133 9.133 0 0 0 12 3.8m0 1.8v12.3h5.3a7.48 7.48 0 0 0 2-5A7.34 7.34 0 0 0 12 5.6m-6.4.8a9.52 9.52 0 0 0-2.7 6v1.3a9.27 9.27 0 0 0 2.7 5.7V18a8.15 8.15 0 0 1-1.8-5.1 7.75 7.75 0 0 1 1.8-5.1zm0 3a7.3 7.3 0 0 0-.9 3.5 6.76 6.76 0 0 0 .9 3.5z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 109.196 13.286" class="checkpoint__title-logo"><path d="M0 10.629V2.657A2.324 2.324 0 0 1 2.657 0h4.4a2.324 2.324 0 0 1 2.657 2.657v2.164H6.981V2.885c0-.285-.095-.38-.379-.38H3.113c-.285 0-.38.1-.38.38v7.516c0 .285.095.379.38.379h3.492c.285 0 .379-.095.379-.379V8.465h2.733v2.164a2.324 2.324 0 0 1-2.657 2.657h-4.4a2.324 2.324 0 0 1-2.657-2.657M11.673.001h2.733v5.238h4.707V.001h2.733v13.285h-2.733V7.744h-4.707v5.542h-2.733Zm12.698 0h8.94v2.5h-6.206v2.752h5.03V7.72h-5.03v3.056h6.206v2.505h-8.94Zm10.402 10.628V2.657A2.324 2.324 0 0 1 37.43 0h4.4a2.324 2.324 0 0 1 2.657 2.657v2.164h-2.733V2.885c0-.285-.095-.38-.38-.38h-3.492c-.285 0-.38.1-.38.38v7.516c0 .285.095.379.38.379h3.492c.285 0 .38-.095.38-.379V8.465h2.733v2.164a2.324 2.324 0 0 1-2.657 2.657h-4.4a2.324 2.324 0 0 1-2.657-2.657m19.435 2.657-3.132-5.751-1.936 2.449v3.3h-2.7V.002h2.7v6.226L53.866.002h3.208l-4.157 5.239 4.365 8.048ZM58.479.002h7.019a2.324 2.324 0 0 1 2.657 2.657v3.53a2.324 2.324 0 0 1-2.657 2.656h-4.289v4.441h-2.733Zm6.567 6.339c.285 0 .38-.1.38-.38V2.885c0-.285-.095-.38-.38-.38h-3.834v3.834Zm4.518 4.288V2.657A2.324 2.324 0 0 1 72.221 0h4.878a2.324 2.324 0 0 1 2.657 2.657v7.972a2.324 2.324 0 0 1-2.657 2.657h-4.878a2.324 2.324 0 0 1-2.657-2.657m7.08.152c.285 0 .38-.095.38-.379V2.885c0-.285-.095-.38-.38-.38h-3.967c-.285 0-.38.1-.38.38v7.516c0 .285.095.379.38.379ZM81.959 0h2.733v13.286h-2.733zm5.257.001h2.847l5.03 8.56V.001h2.657v13.285h-2.657l-5.219-8.864v8.864h-2.657Zm15.641 2.466h-3.606V.001h9.946v2.467h-3.606v10.818h-2.733Z"></path></svg>
+      </div>
+      <p class="checkpoint_description">LoL and Traker news, updates and more </p>
+    </div>
+
+    <div class="checkpoint_articles">
+      <article class="checkpoint-tile" title="Claim Your Drattak Avatar Frame">
+        <a href="">
+          <img class="checkpoint-tile_image" src="" alt="">
+          <div class="checkpoint-tile_info">
+            <h2 class="checkpoint-tile_tittle">Claim Your Drattak Avatar Frame
+            </h2>
+            <span class="checkpoint-tile_timeago">3w ago</span>
+          </div>
+        </a>
+      </article>
+    </div>
+
+
+    <a class="trk-button">
+      " View All "
+      <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="trk-button__icon"><path d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8Z"></path></svg>
+    </a>
+  </div>
+</section>
+
   </template>
   
 
@@ -303,5 +334,46 @@ defineProps<{ msg: string }>()
   height: 1rem;
 }
 
+
+
+
+
+
+
+.checkpoint_news{ 
+  padding: 1.5rem;
+}
+
+.section-container{
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.checkpoint_intro{
+  max-width: 10rem;
+}
+
+.checkpoint_title{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin-bottom: .5rem;
+}
+
+.checkpoint__title-icon{
+  width: 1.5rem;
+  height: 1.5rem; 
+  padding: .25rem;
+  background-color: #c79c58;
+}
+
+.checkpoint__title-logo{
+  height: .8125rem;
+}
+
+.checkpoint_description{
+  margin: 0;
+}
   </style>
   
