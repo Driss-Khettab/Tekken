@@ -93,8 +93,30 @@ defineProps<{ msg: string }>()
 
     <div class="checkpoint_articles">
       <article class="checkpoint-tile" title="Claim Your Drattak Avatar Frame">
-        <a href="">
-          <img class="checkpoint-tile_image" src="" alt="">
+        <a class="a-checkpoint-tile" href="">
+          <img class="checkpoint-tile_image" src="../assets/claim.webp" alt="">
+          <div class="checkpoint-tile_info">
+            <h2 class="checkpoint-tile_tittle">Claim Your Drattak Avatar Frame
+            </h2>
+            <span class="checkpoint-tile_timeago">3w ago</span>
+          </div>
+        </a>
+      </article>
+
+      <article class="checkpoint-tile" title="Claim Your Drattak Avatar Frame">
+        <a class="a-checkpoint-tile" href="">
+          <img class="checkpoint-tile_image" src="../assets/claim.webp" alt="">
+          <div class="checkpoint-tile_info">
+            <h2 class="checkpoint-tile_tittle">Claim Your Drattak Avatar Frame
+            </h2>
+            <span class="checkpoint-tile_timeago">3w ago</span>
+          </div>
+        </a>
+      </article>
+
+      <article class="checkpoint-tile" title="Claim Your Drattak Avatar Frame">
+        <a class="a-checkpoint-tile" href="">
+          <img class="checkpoint-tile_image" src="../assets/claim.webp" alt="">
           <div class="checkpoint-tile_info">
             <h2 class="checkpoint-tile_tittle">Claim Your Drattak Avatar Frame
             </h2>
@@ -338,7 +360,11 @@ defineProps<{ msg: string }>()
 
 
 
-
+.checkpoint_articles{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
 
 .checkpoint_news{ 
   padding: 1.5rem;
@@ -374,6 +400,35 @@ defineProps<{ msg: string }>()
 
 .checkpoint_description{
   margin: 0;
+}
+
+.checkpoint-tile{
+  display: flex;
+  flex-direction: row-reverse; /* Inverse l'ordre des enfants */
+  align-items: center; /* Aligne verticalement */
+  gap: 1rem;
+}
+
+.checkpoint-tile_info {
+  flex: 1; /* Permet au texte de prendre le reste de l'espace */
+}
+
+.checkpoint-tile_tittle{
+  font-size: .875rem;
+  font-weight: 500;
+  line-height: 1rem;
+  word-wrap: break-word;
+  width: 150px;
+}
+
+.checkpoint-tile_timeago{
+  font-size: .625rem;
+  font-weight: 500;
+  opacity: .5;
+}
+
+.a-checkpoint-tile{
+  display: flex;
 }
   </style>
   
