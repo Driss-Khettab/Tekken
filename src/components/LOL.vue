@@ -128,7 +128,7 @@ defineProps<{ msg: string }>()
 
 
     <a class="trk-button">
-      " View All "
+       View All 
       <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="trk-button__icon"><path d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8Z"></path></svg>
     </a>
   </div>
@@ -354,9 +354,8 @@ defineProps<{ msg: string }>()
 .platform-icon{
   width: 1rem;
   height: 1rem;
+  fill: white;
 }
-
-
 
 
 
@@ -396,6 +395,7 @@ defineProps<{ msg: string }>()
 
 .checkpoint__title-logo{
   height: .8125rem;
+  fill: white;
 }
 
 .checkpoint_description{
@@ -419,16 +419,38 @@ defineProps<{ msg: string }>()
   line-height: 1rem;
   word-wrap: break-word;
   width: 150px;
+  color: white;
+
 }
 
 .checkpoint-tile_timeago{
   font-size: .625rem;
   font-weight: 500;
   opacity: .5;
+  color: white;
 }
 
 .a-checkpoint-tile{
   display: flex;
+}
+
+.trk-button{
+  display: flex;
+  background-color: #ffffff26;
+  gap:.5rem;
+  margin: .25rem .25rem;
+  color: inherit;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1.5rem;
+}
+
+.trk-button__icon{
+  display: block;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: -.25rem 0 -.25rem;
+  fill: white;
 }
   </style>
   
