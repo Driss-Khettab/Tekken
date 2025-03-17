@@ -7,6 +7,7 @@ import RL from './components/RL.vue'
 import CS from './components/CS.vue'
 import TK from './components/TK.vue'
 import LOL from './components/LOL.vue'
+import CSTracker from './components/CsTrackerPage.vue'
 
 const routes: Record<string, any> = {
   '/': Home,
@@ -14,7 +15,9 @@ const routes: Record<string, any> = {
   '/rl': RL,
   '/lol': LOL,
   '/tk': TK,
-  '/about': About
+  '/about': About,
+
+  '/cstracker' : CSTracker,
 }
 
 const currentPath = ref(window.location.hash)
@@ -34,6 +37,7 @@ const backgroundClass = computed(() => {
     case '#/lol': return 'bg-lol'
     case '#/tk': return 'bg-tk'
     case '#/about': return 'bg-about'
+    case '#/cstracker' : return 'bg-cs'
     default: return 'bg-default'
   }
 })

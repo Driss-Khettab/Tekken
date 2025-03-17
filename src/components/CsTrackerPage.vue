@@ -1,19 +1,43 @@
-<script>
+<script setup lang="ts">
 
 </script>
 
 <template>
     <div class="main">
-        <div class="banner">
-            <img>
-            <div class="topLeft-button">
 
+        <header class="header">
+        <div class="banner">
+            <img src="../assets/csbanneer.webp" alt="cs-banner" class="banner">
+            <div class="topLeft-button">
             </div>
+
             <div class="player-info">
-                <img>
-                <span> 13 585 Views</span>
-                <span>ketazu</span>
+
+            <div class="avatar-container-pos">
+                <div class="avatar-container">
+                    <img src="../assets/cs2.webp" class="user-avatar">
+                </div>
+            </div>  
+
+            <div class="view">
+               <div class="view-info">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18" class="view-svg">
+                    <path fill="currentColor" d="M9 3.375C5.25 3.375 2.047 5.707.75 9c1.297 3.293 4.5 5.625 8.25 5.625S15.953 12.293 17.25 9C15.953 5.707 12.75 3.375 9 3.375m0 9.375c-2.07 0-3.75-1.68-3.75-3.75S6.93 5.25 9 5.25 12.75 6.93 12.75 9 11.07 12.75 9 12.75m0-6A2.247 2.247 0 0 0 6.75 9 2.247 2.247 0 0 0 9 11.25 2.247 2.247 0 0 0 11.25 9 2.247 2.247 0 0 0 9 6.75" opacity=".75"></path>
+                  </svg>
+                  <span> 13 585 Views</span>
+               </div>
+
+               
+               <div class="username-container">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="platform-icon">
+                     <path d="M12 0a12 12 0 0 1 12 12 12 12 0 0 1-12 12C6.48 24 1.86 20.304.432 15.276l4.596 1.896a3.41 3.41 0 0 0 3.336 2.724A3.4 3.4 0 0 0 11.76 16.5v-.156l4.08-2.916h.096a4.527 4.527 0 0 0 4.524-4.524 4.527 4.527 0 0 0-4.524-4.524c-2.496 0-4.536 2.028-4.536 4.524v.06l-2.844 4.152-.192-.012c-.708 0-1.368.216-1.908.588L0 11.04C.516 4.86 5.676 0 12 0M7.536 18.204a1.88 1.88 0 0 0 2.46-1.008A1.88 1.88 0 0 0 9 14.748l-1.536-.636a2.53 2.53 0 0 1 1.872.036 2.44 2.44 0 0 1 1.38 1.38c.264.624.264 1.32 0 1.944-.516 1.296-2.04 1.92-3.336 1.38a2.5 2.5 0 0 1-1.308-1.248zm11.424-9.3a3.027 3.027 0 0 1-3.024 3.024 3.024 3.024 0 0 1-3.012-3.024 3 3 0 0 1 3.012-3.012 3.024 3.024 0 0 1 3.024 3.012m-5.28 0a2.266 2.266 0 0 0 2.268 2.268 2.264 2.264 0 0 0 2.256-2.268 2.264 2.264 0 0 0-2.256-2.268 2.266 2.266 0 0 0-2.268 2.268"></path>
+                  </svg>
+                  <span class="username">ketazu</span>
+               </div>
             </div>
+            
+            </div>
+
             <div class="tabs">
                 <a>Overview</a>
                 <a>Matches</a>
@@ -21,6 +45,7 @@
                 <a>Weapons</a>
             </div>    
         </div>
+    </header>
     </div>
 </template>
 
@@ -31,4 +56,85 @@
     flex-direction: column;
 }
 
+.header{
+    display: flex;
+    flex-direction: column;
+}
+
+.banner{
+    position: relative;
+}
+
+.player-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem; 
+    position: absolute;
+    bottom: 5rem;
+    left: 1rem;
+}
+
+.avatar-container-pos{
+    display: flex;
+    align-items: center;
+}
+
+.avatar-container{
+    position: relative;
+    height: 6rem;
+    width: 6rem;
+}
+
+.user-avatar{
+    border-color: #ffffff;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: .25rem;
+    display: block;
+    height: 100%;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.view {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 0.5rem;
+}
+
+.view-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; 
+}
+
+.view-svg{
+    height: 1.125rem;
+}
+
+.username-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.platform-icon {
+    height: 1.5rem; 
+    width: 1.5rem;
+    fill: currentColor; 
+    color: #ffffff;
+}
+
+
+.username {
+    font-weight: bold;
+    font-size: 1rem;
+}
 </style>
