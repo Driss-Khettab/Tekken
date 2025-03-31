@@ -1,46 +1,53 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue'
-import Home from './components/Home.vue'
-import About from './components/About.vue'
-import NotFound from './components/NotFound.vue'
-import RL from './components/RL.vue'
-import CS from './components/CS.vue'
-import TK from './components/TK.vue'
-import LOL from './components/LOL.vue'
-import CSTracker from './components/CsTrackerPage.vue'
+import { ref, computed } from "vue";
+import Home from "./components/Home.vue";
+import About from "./components/About.vue";
+import NotFound from "./components/NotFound.vue";
+import RL from "./components/RL.vue";
+import CS from "./components/CS.vue";
+import TK from "./components/TK.vue";
+import LOL from "./components/LOL.vue";
+import CSTracker from "./components/CsTrackerPage.vue";
 
 const routes: Record<string, any> = {
-  '/': Home,
-  '/cs': CS,
-  '/rl': RL,
-  '/lol': LOL,
-  '/tk': TK,
-  '/about': About,
+  "/": Home,
+  "/cs": CS,
+  "/rl": RL,
+  "/lol": LOL,
+  "/tk": TK,
+  "/about": About,
 
-  '/cstracker' : CSTracker,
-}
+  "/cstracker": CSTracker,
+};
 
-const currentPath = ref(window.location.hash)
+const currentPath = ref(window.location.hash);
 
-window.addEventListener('hashchange', () => {
-  currentPath.value = window.location.hash
-})
+window.addEventListener("hashchange", () => {
+  currentPath.value = window.location.hash;
+});
 
 const currentView = computed(() => {
-  return routes[currentPath.value.slice(1) || '/'] || NotFound
-})
+  return routes[currentPath.value.slice(1) || "/"] || NotFound;
+});
 
 const backgroundClass = computed(() => {
   switch (currentPath.value) {
-    case '#/cs': return 'bg-cs'
-    case '#/rl': return 'bg-rl'
-    case '#/lol': return 'bg-lol'
-    case '#/tk': return 'bg-tk'
-    case '#/about': return 'bg-about'
-    case '#/cstracker' : return 'bg-cs'
-    default: return 'bg-default'
+    case "#/cs":
+      return "bg-cs";
+    case "#/rl":
+      return "bg-rl";
+    case "#/lol":
+      return "bg-lol";
+    case "#/tk":
+      return "bg-tk";
+    case "#/about":
+      return "bg-about";
+    case "#/cstracker":
+      return "bg-cs";
+    default:
+      return "bg-default";
   }
-})
+});
 </script>
 
 <template>
