@@ -47,10 +47,10 @@
         </div>
 
         <div class="tabs">
-          <a>Overview</a>
-          <a>Matches</a>
-          <a>Maps</a>
-          <a>Weapons</a>
+          <a class="tabs-description">Overview</a>
+          <a class="tabs-description">Matches</a>
+          <a class="tabs-description">Maps</a>
+          <a class="tabs-description">Weapons</a>
         </div>
       </div>
     </header>
@@ -133,8 +133,9 @@
 
 .view-info {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 0.5rem;
+  margin-left: 2rem;
 }
 
 .view-svg {
@@ -169,8 +170,13 @@
   display: flex;
   gap: 1rem;
   padding: 1rem;
-  justify-content: center;
+  justify-content: flex-start;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
+  padding-left: 9rem;
+}
+
+.tabs-description{
+  color: white;
 }
 </style>
