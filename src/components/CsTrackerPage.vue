@@ -54,6 +54,86 @@
         </div>
       </div>
     </header>
+
+    <div class="content">
+
+      <div class="side-card">
+        <table class="maps">
+          <thead>
+            <tr>
+              <th>Map</th>
+              <th>Rating</th>
+              <th>Win %</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="d2">
+              <td><div>Dust 2</div></td>
+              <td><div><img src="../assets/skillgroup15.webp" class="rank-image"></div></td>
+              <td><div>50.0%</div><div>146W - 114L</div></td>
+            </tr>
+            <tr class="vertigo">
+              <td><div>Vertigo</div></td>
+              <td><div><img src="../assets/skillgroup15.webp" class="rank-image"></div></td>
+              <td><div>--%</div><div>--W - --L</div></td>
+            </tr>
+            <tr class="mirage">
+              <td><div>Mirage</div></td>
+              <td><div><img src="../assets/skillgroup15.webp" class="rank-image"></div></td>
+              <td><div>--%</div><div>--W - --L</div></td>
+            </tr>
+            <tr class="ancient">
+              <td><div>Ancient</div></td>
+              <td><div><img src="../assets/skillgroup15.webp" class="rank-image"></div></td>
+              <td><div>--%</div><div>--W - --L</div></td>
+            </tr>
+            <tr class="nuke">
+              <td><div>Nuke</div></td>
+              <td><div><img src="../assets/skillgroup15.webp" class="rank-image"></div></td>
+              <td><div>--%</div><div>--W - --L</div></td>
+            </tr>
+            <tr class="inferno">
+              <td><div>Inferno</div></td>
+              <td><div><img src="../assets/skillgroup15.webp" class="rank-image"></div></td>
+              <td><div>--%</div><div>--W - --L</div></td>
+            </tr>
+            <tr class="overpass">
+              <td><div>Overpass</div></td>
+              <td><div><img src="../assets/skillgroup15.webp" class="rank-image"></div></td>
+              <td><div>--%</div><div>--W - --L</div></td>
+            </tr>
+            <tr class="train">
+              <td><div>Train</div></td>
+              <td><div><img src="../assets/skillgroup15.webp" class="rank-image"></div></td>
+              <td><div>--%</div><div>--W - --L</div></td>
+            </tr>
+            <tr class="anubis">
+              <td><div>Anubis</div></td>
+              <td><div><img src="../assets/skillgroup15.webp" class="rank-image"></div></td>
+              <td><div>--%</div><div>--W - --L</div></td>
+            </tr>
+            <tr class="office">
+              <td><div>Office</div></td>
+              <td><div><img src="../assets/skillgroup15.webp" class="rank-image"></div></td>
+              <td><div>--%</div><div>--W - --L</div></td>
+            </tr>
+          </tbody>
+        </table> 
+        <div class="faceit"></div>
+      </div>
+
+      <div class="main-content">
+      <div class="competitive-overview"></div>
+
+      <div class="side-data">
+        <div class="t-side"></div>
+        <div class="ct-side"></div>
+      </div>
+
+      <div class="match-history"></div>
+      </div> 
+    </div>
+
   </div>
 </template>
 
@@ -178,5 +258,14 @@
 
 .tabs-description{
   color: white;
+}
+
+.content{
+  display: flex;
+  flex-direction: row;
+}
+
+.rank-image{
+  height: 1.5rem;
 }
 </style>
