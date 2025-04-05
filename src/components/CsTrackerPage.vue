@@ -61,9 +61,9 @@
         <table class="maps">
           <thead>
             <tr>
-              <th>Map</th>
-              <th>Rating</th>
-              <th>Win %</th>
+              <th class="table-th">Map</th>
+              <th class="table-th">Rating</th>
+              <th class="table-th">Win %</th>
             </tr>
           </thead>
           <tbody>
@@ -73,49 +73,44 @@
               <td><div>50.0%</div><div>146W - 114L</div></td>
             </tr>
             <tr class="vertigo">
-              <td><div>Vertigo</div></td>
-              <td><div><img src="../assets/skillgroup15.webp" class="rank-image"></div></td>
-              <td><div>--%</div><div>--W - --L</div></td>
+              <td class="table_column--left"><div>Vertigo</div></td>
+              <td class="table_column--center"><div><img src="../assets/skillgroup15.webp" class="rank-image"></div></td>
+              <td class="table_column--right"><div>--%</div><div>--W - --L</div></td>
             </tr>
             <tr class="mirage">
-              <td><div>Mirage</div></td>
-              <td><div><img src="../assets/skillgroup15.webp" class="rank-image"></div></td>
-              <td><div>--%</div><div>--W - --L</div></td>
+              <td class="table_column--left"><div>Mirage</div></td>
+              <td class="table_column--center"><div><img src="../assets/skillgroup15.webp" class="rank-image"></div></td>
+              <td class="table_column--right"><div>--%</div><div>--W - --L</div></td>
             </tr>
             <tr class="ancient">
-              <td><div>Ancient</div></td>
-              <td><div><img src="../assets/skillgroup15.webp" class="rank-image"></div></td>
-              <td><div>--%</div><div>--W - --L</div></td>
+              <td class="table_column--left"><div>Ancient</div></td>
+              <td class="table_column--center"><div><img src="../assets/skillgroup15.webp" class="rank-image"></div></td>
+              <td class="table_column--right"><div>--%</div><div>--W - --L</div></td>
             </tr>
             <tr class="nuke">
-              <td><div>Nuke</div></td>
-              <td><div><img src="../assets/skillgroup15.webp" class="rank-image"></div></td>
-              <td><div>--%</div><div>--W - --L</div></td>
+              <td class="table_column--left"><div>Nuke</div></td>
+              <td class="table_column--center"><div><img src="../assets/skillgroup15.webp" class="rank-image"></div></td>
+              <td class="table_column--right"><div>--%</div><div>--W - --L</div></td>
             </tr>
             <tr class="inferno">
-              <td><div>Inferno</div></td>
-              <td><div><img src="../assets/skillgroup15.webp" class="rank-image"></div></td>
-              <td><div>--%</div><div>--W - --L</div></td>
+              <td class="table_column--left"><div>Inferno</div></td>
+              <td class="table_column--center"><div><img src="../assets/skillgroup15.webp" class="rank-image"></div></td>
+              <td class="table_column--right"><div>--%</div><div>--W - --L</div></td>
             </tr>
             <tr class="overpass">
-              <td><div>Overpass</div></td>
-              <td><div><img src="../assets/skillgroup15.webp" class="rank-image"></div></td>
-              <td><div>--%</div><div>--W - --L</div></td>
+              <td class="table_column--left"><div>Overpass</div></td>
+              <td class="table_column--center"><div><img src="../assets/skillgroup15.webp" class="rank-image"></div></td>
+              <td class="table_column--right"><div>--%</div><div>--W - --L</div></td>
             </tr>
             <tr class="train">
-              <td><div>Train</div></td>
-              <td><div><img src="../assets/skillgroup15.webp" class="rank-image"></div></td>
-              <td><div>--%</div><div>--W - --L</div></td>
+              <td class="table_column--left"><div>Train</div></td>
+              <td class="table_column--center"><div><img src="../assets/skillgroup15.webp" class="rank-image"></div></td>
+              <td class="table_column--right"><div>--%</div><div>--W - --L</div></td>
             </tr>
             <tr class="anubis">
-              <td><div>Anubis</div></td>
-              <td><div><img src="../assets/skillgroup15.webp" class="rank-image"></div></td>
-              <td><div>--%</div><div>--W - --L</div></td>
-            </tr>
-            <tr class="office">
-              <td><div>Office</div></td>
-              <td><div><img src="../assets/skillgroup15.webp" class="rank-image"></div></td>
-              <td><div>--%</div><div>--W - --L</div></td>
+              <td class="table_column--left"><div>Anubis</div></td>
+              <td class="table_column--center"><div><img src="../assets/skillgroup15.webp" class="rank-image"></div></td>
+              <td class="table_column--right"><div>--%</div><div>--W - --L</div></td>
             </tr>
           </tbody>
         </table> 
@@ -265,7 +260,71 @@
   flex-direction: row;
 }
 
+/* .maps{
+} */
+
 .rank-image{
   height: 1.5rem;
+}
+
+.table-th{
+  /* padding: .5rem; */
+}
+
+.table_column--left{
+  padding: .5rem;
+}
+
+.table_column--center{
+  padding: .5rem;
+}
+
+.table_column--right{
+  padding: .5rem;
+}
+
+.d2{
+  background-image: url(../assets/d2bg.jpg);
+  background-position: 50%;
+}
+
+.vertigo{
+  background-image: url(../assets/vertigobg.webp);
+  background-position: 50%;
+}
+
+.mirage{
+  background-image: url(../assets/miragebg.jpg);
+  background-position: 50%;
+}
+
+.ancient{
+  background-image: url(../assets/ancientbg.jpg);
+  background-position: 50%;
+}
+
+.nuke{
+  background-image: url(../assets/nukebg.webp);
+  background-position: 50%;
+}
+
+.inferno{
+  background-image: url(../assets/infernobg.webp);
+  background-position: 50%;
+}
+
+.overpass{
+  background-image: url(../assets/overpassbg.webp);
+  background-position: 50%;
+}
+
+.train{
+  background-image: url(../assets/trainbg.webp);
+  background-position: 50%;
+}
+
+.anubis{
+  background-image: url(../assets/anubisbg.jpg);
+  background-position: 50%;
 }
 </style>

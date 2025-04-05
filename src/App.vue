@@ -58,6 +58,7 @@ const backgroundClass = computed(() => {
     <a class="link" href="#/lol">League Of Legends</a> |
     <a class="link" href="#/tk">Tekken</a> |
     <a class="link" href="#/about">About</a> |
+
   </div>
 
   <div class="page-container" :class="backgroundClass">

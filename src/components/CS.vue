@@ -60,6 +60,7 @@ defineProps<{ msg: string }>();
     </div>
 
     <div class="leaderboard">
+      <a class="link" href="#/cstracker">cs
       <div class="player1">
         <p class="leader-card">#1</p>
         <div class="avatar-container">
@@ -75,6 +76,7 @@ defineProps<{ msg: string }>();
         <p class="name">Spotlight</p>
         <h1 class="value">#1</h1>
       </div>
+    </a>
       <div class="player1">
         <p class="leader-card">#1</p>
         <div class="avatar-container">
