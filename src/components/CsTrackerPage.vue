@@ -114,7 +114,15 @@
             </tr>
           </tbody>
         </table> 
-        <div class="faceit"></div>
+        <div class="faceit">
+          <header>
+            <div></div>
+          </header>
+          <div>
+            <h2>FACEIT Stats</h2>
+            <div></div>
+          </div>
+        </div>
       </div>
 
       <div class="main-content">
@@ -271,6 +279,20 @@
   /* padding: .5rem; */
 }
 
+table.maps {
+  border-collapse: collapse;
+  border: none;
+}
+
+table.maps th,
+table.maps td {
+  border: none;
+}
+
+table.maps tr {
+  border-bottom: 1px solid #ccc; 
+}
+
 .table_column--left{
   padding: .5rem;
 }
@@ -281,6 +303,11 @@
 
 .table_column--right{
   padding: .5rem;
+}
+
+table.maps td{
+  font-size: 1.125rem;
+  font-weight: 600;
 }
 
 .d2{
