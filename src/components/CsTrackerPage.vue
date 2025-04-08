@@ -126,7 +126,28 @@
       </div>
 
       <div class="main-content">
-      <div class="competitive-overview"></div>
+
+      <div class="competitive-overview">
+
+        <div class="card-header">
+          <h2>Competitive Season Overview</h2>
+          <div class="card-description">
+            <span class="playtime">517.1h Playtime</span>
+            <span class="matches"> 
+              ::before
+              "1,434 Matches "
+            </span>
+          </div>
+          <button class="card-header-action">Show More</button>
+        </div>
+
+        <div class="card-body">
+          <div class="highlighted-giants"></div>
+          <div class="giant-stats"></div>
+          <div class="data-main"></div>
+        </div>
+
+      </div>
 
       <div class="side-data">
         <div class="t-side"></div>
