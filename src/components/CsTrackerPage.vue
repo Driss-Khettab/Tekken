@@ -134,15 +134,26 @@
           <div class="card-description">
             <span class="playtime">517.1h Playtime</span>
             <span class="matches"> 
-              ::before
-              "1,434 Matches "
+              // 1,434 Matches
             </span>
           </div>
-          <button class="card-header-action">Show More</button>
+          <button class="card-header-button">Show More</button>
         </div>
 
         <div class="card-body">
-          <div class="highlighted-giants"></div>
+        
+          <div class="highlighted-giants">
+            <div class="profile-highlighted-content_stats">
+              <img>
+              <div class="stat">
+                <span>Highest Rating</span>
+                <span>Legendary Eagle</span>
+              </div>
+              <div class="profile-highlighted-content-ratio">
+                <svg></svg>
+              </div>
+            </div>
+          </div>
           <div class="giant-stats"></div>
           <div class="data-main"></div>
         </div>
@@ -374,5 +385,33 @@ table.maps td{
 .anubis{
   background-image: url(../assets/anubisbg.jpg);
   background-position: 50%;
+}
+
+.card-header{
+  display: flex;
+  margin-left: 3rem;
+}
+
+.card-description{
+  display: flex;
+  margin-top: 1.7rem;
+  margin-left: 2.5rem;
+  font-size: .75rem;
+  font-weight: 800;
+  color: var(--color-text-secondary);
+
+}
+
+.card-header-button{ 
+  all: unset;
+  cursor: pointer;
+  color: #f29224;
+  font-size: .875rem;
+  font-weight: 800;
+  margin-left: 15rem;
+}
+
+.highlighted-giants{
+  background: linear-gradient(to right, var(#333333) 0, var(#8e7333) 100%);
 }
 </style>
