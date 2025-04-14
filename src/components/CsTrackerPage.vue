@@ -144,13 +144,13 @@
         
           <div class="highlighted-giants">
             <div class="profile-highlighted-content_stats">
-              <img>
+              <img src="../assets/skillgroup15.webp" class="highest-skillgroup">
               <div class="stat">
-                <span>Highest Rating</span>
-                <span>Legendary Eagle</span>
+                <span class="stat_label">Highest Rating</span>
+                <span class="stat_rank_label">Legendary Eagle</span>
               </div>
               <div class="profile-highlighted-content-ratio">
-                <svg></svg>
+                <svg data-v-c7efa73e="" data-v-f9e7924c="" width="80" height="80" viewBox="0 0 80 80"><defs data-v-c7efa73e=""><clipPath data-v-c7efa73e="" id="arcLoss"><path data-v-c7efa73e="" d="         M 40, 40         L 24.11761131175807, 76.71171106820826         A 40, 40 0 0, 1 40, 0 z"></path></clipPath><clipPath data-v-c7efa73e="" id="arcWin"><path data-v-c7efa73e="" d="         M 40, 40         L 40, 0         A 40, 40 0 1, 1 24.11761131175807, 76.71171106820826 z"></path></clipPath><mask data-v-c7efa73e="" id="ring"><rect data-v-c7efa73e="" x="0" y="0" width="80" height="80" fill="white"></rect><circle data-v-c7efa73e="" r="32" cx="40" cy="40" fill="black"></circle></mask></defs><g data-v-c7efa73e="" opacity="0.9" mask="url(#ring)"><circle data-v-c7efa73e="" r="40" cx="40" cy="40" fill="#952030" clip-path="url(#arcLoss)"></circle><circle data-v-c7efa73e="" r="40" cx="40" cy="40" fill="#007e62" clip-path="url(#arcWin)"></circle></g><g data-v-c7efa73e="" transform="translate(40, 36)"><text data-v-c7efa73e="" fill="#fff" x="-12" y="0" text-anchor="middle">739</text><text data-v-c7efa73e="" fill="#fff" x="-12" y="18" text-anchor="middle">569</text><text data-v-c7efa73e="" fill="#d9d4ce" text-anchor="middle"><tspan data-v-c7efa73e="" x="14" y="0">W</tspan><tspan data-v-c7efa73e="" x="12" y="18">L</tspan></text></g></svg>
               </div>
             </div>
           </div>
@@ -413,5 +413,34 @@ table.maps td{
 
 .highlighted-giants{
   background: linear-gradient(to right, var(#333333) 0, var(#8e7333) 100%);
+}
+
+.profile-highlighted-content_stats{
+  display: flex;
+  gap: 3rem;
+}
+
+.stat{
+  display: flex;
+  flex-direction:column;
+}
+
+.stat_label{
+  color: rgb(255, 255, 255, 0.75);
+  font-size: 1.25rem;
+  font-weight: 500;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.stat_rank_label{
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.highest-skillgroup{
+  width: 7.5rem;
+  height: 2.6875rem;
 }
 </style>
