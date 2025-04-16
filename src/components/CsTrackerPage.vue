@@ -154,7 +154,29 @@
               </div>
             </div>
           </div>
-          <div class="giant-stats"></div>
+
+          <div class="giant-stats">
+            <div class="stat-giant-expandable">
+              <div class="wrapper">
+              <div class="progress-vertical">
+                <div class="fill" style="transform: translateY(26%);"></div>
+              </div>
+              <div class="numbers">
+                <span class="name">Damage/Round</span>
+                <span class="numbers-value">92.1</span>
+                <div class="bottom">
+                  <span>Top 26%</span>
+                </div>
+                <div class="more">
+                  <svg class="more-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 16"><path d="M2 12a2 2 0 1 1-2 2 2 2 0 0 1 2-2m0-6a2 2 0 1 1-2 2 2 2 0 0 1 2-2m0-6a2 2 0 1 1-2 2 2 2 0 0 1 2-2"></path></svg>
+                </div>   
+              </div>
+            </div>
+            </div>
+            <div class="stat-giant-expandable"></div>
+            <div class="stat-giant-expandable"></div>
+            <div class="stat-giant-expandable"></div>
+          </div>
           <div class="data-main"></div>
         </div>
 
@@ -412,12 +434,41 @@ table.maps td{
 }
 
 .highlighted-giants{
-  background: linear-gradient(to right, var(#333333) 0, var(#8e7333) 100%);
+  background: linear-gradient(to right, #333333 0%, #8e7333 100%);
+
 }
 
 .profile-highlighted-content_stats{
   display: flex;
   gap: 3rem;
+}
+
+.giant-stats{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  position: relative;
+  grid-gap: .5rem;
+  margin: 1rem 1rem 0;
+}
+
+.stat-giant-expandable{
+  background:var(--color-surface-2);
+  border-radius: var(--border-radius);
+
+}
+
+.wrapper{
+  display: flex;
+  flex: 1;
+  align-items: stretch;
+}
+
+.progress-vertical{
+  margin-right: 1rem;
+  min-width: .25rem;
+  width: .25rem;
+  overflow: hidden;
+  background-color: var(--color-background);
 }
 
 .stat{
@@ -442,5 +493,21 @@ table.maps td{
 .highest-skillgroup{
   width: 7.5rem;
   height: 2.6875rem;
+}
+
+.fill{
+  background-color: var(--color-accent);
+}
+
+.numbers{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-self: center;
+}
+
+.more-svg{
+  fill: #f29224;
+  width: .375rem;
 }
 </style>

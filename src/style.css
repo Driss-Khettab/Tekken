@@ -12,6 +12,10 @@
   -moz-osx-font-smoothing: grayscale;
   --color-text-primary: #ffffff;
   --color-text-secondary: #99ABBF;
+  --color-surface-2: #242638;
+  --border-radius: 0.5rem;
+  --color-accent: #8c99d6;
+  --color-background:#181a26;
 }
 
 a {
