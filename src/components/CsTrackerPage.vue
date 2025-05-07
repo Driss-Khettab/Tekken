@@ -161,23 +161,194 @@
               <div class="progress-vertical">
                 <div class="fill" style="transform: translateY(26%);"></div>
               </div>
-              <div class="numbers">
+              <div class="stat-data">
+                <div class="numbers">
                 <span class="name">Damage/Round</span>
                 <span class="numbers-value">92.1</span>
                 <div class="bottom">
                   <span>Top 26%</span>
                 </div>
+              </div>
                 <div class="more">
                   <svg class="more-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 16"><path d="M2 12a2 2 0 1 1-2 2 2 2 0 0 1 2-2m0-6a2 2 0 1 1-2 2 2 2 0 0 1 2-2m0-6a2 2 0 1 1-2 2 2 2 0 0 1 2-2"></path></svg>
                 </div>   
               </div>
             </div>
             </div>
-            <div class="stat-giant-expandable"></div>
-            <div class="stat-giant-expandable"></div>
-            <div class="stat-giant-expandable"></div>
+            <div class="stat-giant-expandable">
+              <div class="stat-giant-expandable">
+              <div class="wrapper">
+              <div class="progress-vertical">
+                <div class="fill" style="transform: translateY(26%);"></div>
+              </div>
+              <div class="stat-data">
+                <div class="numbers">
+                <span class="name">Damage/Round</span>
+                <span class="numbers-value">92.1</span>
+                <div class="bottom">
+                  <span>Top 26%</span>
+                </div>
+              </div>
+                <div class="more">
+                  <svg class="more-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 16"><path d="M2 12a2 2 0 1 1-2 2 2 2 0 0 1 2-2m0-6a2 2 0 1 1-2 2 2 2 0 0 1 2-2m0-6a2 2 0 1 1-2 2 2 2 0 0 1 2-2"></path></svg>
+                </div>   
+              </div>
+            </div>
+            </div>
+            </div>
+            <div class="stat-giant-expandable">
+              <div class="stat-giant-expandable">
+              <div class="wrapper">
+              <div class="progress-vertical">
+                <div class="fill" style="transform: translateY(26%);"></div>
+              </div>
+              <div class="stat-data">
+                <div class="numbers">
+                <span class="name">Damage/Round</span>
+                <span class="numbers-value">92.1</span>
+                <div class="bottom">
+                  <span>Top 26%</span>
+                </div>
+              </div>
+                <div class="more">
+                  <svg class="more-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 16"><path d="M2 12a2 2 0 1 1-2 2 2 2 0 0 1 2-2m0-6a2 2 0 1 1-2 2 2 2 0 0 1 2-2m0-6a2 2 0 1 1-2 2 2 2 0 0 1 2-2"></path></svg>
+                </div>   
+              </div>
+            </div>
+            </div>
+            </div>
+            <div class="stat-giant-expandable">
+              <div class="stat-giant-expandable">
+              <div class="wrapper">
+              <div class="progress-vertical">
+                <div class="fill" style="transform: translateY(26%);"></div>
+              </div>
+              <div class="stat-data">
+                <div class="numbers">
+                <span class="name">Damage/Round</span>
+                <span class="numbers-value">92.1</span>
+                <div class="bottom">
+                  <span>Top 26%</span>
+                </div>
+              </div>
+                <div class="more">
+                  <svg class="more-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 16"><path d="M2 12a2 2 0 1 1-2 2 2 2 0 0 1 2-2m0-6a2 2 0 1 1-2 2 2 2 0 0 1 2-2m0-6a2 2 0 1 1-2 2 2 2 0 0 1 2-2"></path></svg>
+                </div>   
+              </div>
+            </div>
+            </div>
+            </div>
           </div>
-          <div class="data-main"></div>
+          <div class="data-main">
+            <div class="stat-align-expandable">
+              <div class="wrapper">
+                <div class="numbers">
+                  <span class="name" title="Wins">Wins</span>
+                  <span class="value">780</span>
+                </div>
+                <div class="bottom"></div>
+              </div>
+            </div>
+            <div class="stat-align-expandable">
+              <div class="wrapper">
+                <div class="numbers">
+                  <span class="name" title="Wins">Wins</span>
+                  <span class="value">780</span>
+                </div>
+                <div class="bottom"></div>
+              </div>
+            </div>
+            <div class="stat-align-expandable">
+              <div class="wrapper">
+                <div class="numbers">
+                  <span class="name" title="Wins">Wins</span>
+                  <span class="value">780</span>
+                </div>
+                <div class="bottom"></div>
+              </div>
+            </div>
+            <div class="stat-align-expandable">
+              <div class="wrapper">
+                <div class="numbers">
+                  <span class="name" title="Wins">Wins</span>
+                  <span class="value">780</span>
+                </div>
+                <div class="bottom"></div>
+              </div>
+            </div>
+            <div class="stat-align-expandable">
+              <div class="wrapper">
+                <div class="numbers">
+                  <span class="name" title="Wins">Wins</span>
+                  <span class="value">780</span>
+                </div>
+                <div class="bottom"></div>
+              </div>
+            </div>
+            <div class="stat-align-expandable">
+              <div class="wrapper">
+                <div class="numbers">
+                  <span class="name" title="Wins">Wins</span>
+                  <span class="value">780</span>
+                </div>
+                <div class="bottom"></div>
+              </div>
+            </div>
+            <div class="stat-align-expandable">
+              <div class="wrapper">
+                <div class="numbers">
+                  <span class="name" title="Wins">Wins</span>
+                  <span class="value">780</span>
+                </div>
+                <div class="bottom"></div>
+              </div>
+            </div>
+            <div class="stat-align-expandable">
+              <div class="wrapper">
+                <div class="numbers">
+                  <span class="name" title="Wins">Wins</span>
+                  <span class="value">780</span>
+                </div>
+                <div class="bottom"></div>
+              </div>
+            </div>
+            <div class="stat-align-expandable">
+              <div class="wrapper">
+                <div class="numbers">
+                  <span class="name" title="Wins">Wins</span>
+                  <span class="value">780</span>
+                </div>
+                <div class="bottom"></div>
+              </div>
+            </div>
+            <div class="stat-align-expandable">
+              <div class="wrapper">
+                <div class="numbers">
+                  <span class="name" title="Wins">Wins</span>
+                  <span class="value">780</span>
+                </div>
+                <div class="bottom"></div>
+              </div>
+            </div>
+            <div class="stat-align-expandable">
+              <div class="wrapper">
+                <div class="numbers">
+                  <span class="name" title="Wins">Wins</span>
+                  <span class="value">780</span>
+                </div>
+                <div class="bottom"></div>
+              </div>
+            </div>
+            <div class="stat-align-expandable">
+              <div class="wrapper">
+                <div class="numbers">
+                  <span class="name" title="Wins">Wins</span>
+                  <span class="value">780</span>
+                </div>
+                <div class="bottom"></div>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -449,6 +620,7 @@ table.maps td{
   position: relative;
   grid-gap: .5rem;
   margin: 1rem 1rem 0;
+  box-shadow: 0 3px 6px #00000026
 }
 
 .stat-giant-expandable{
@@ -469,6 +641,9 @@ table.maps td{
   width: .25rem;
   overflow: hidden;
   background-color: var(--color-background);
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .stat{
@@ -497,6 +672,11 @@ table.maps td{
 
 .fill{
   background-color: var(--color-accent);
+  height: 100%;
+}
+
+.stat-data{
+  display: flex;
 }
 
 .numbers{
@@ -506,8 +686,22 @@ table.maps td{
   align-self: center;
 }
 
+
+.more{
+  margin-top: 1rem;
+  margin-left: 2.5rem;
+}
+
 .more-svg{
   fill: #f29224;
   width: .375rem;
+}
+
+.data-main{
+  display: grid;
+  grid-gap: .75rem;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  padding: .625rem;
+  background-color: var(--color-surface-2);
 }
 </style>
