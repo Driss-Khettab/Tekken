@@ -251,8 +251,23 @@
             </div>
             <div class="stat-align-expandable">
               <div class="wrapper">
+                <div class="progress-vertical">
+                <div class="fill" style="transform: translateY(26%);"></div>
+              </div>
                 <div class="numbers">
-                  <span class="name" title="Wins">Wins</span>
+                  <span class="name" title="Wins">Kast</span>
+                  <span class="value">75.2%</span>
+                </div>
+                <div class="bottom"></div>
+              </div>
+            </div>
+            <div class="stat-align-expandable">
+              <div class="wrapper">
+                <div class="progress-vertical">
+                <div class="fill" style="transform: translateY(26%);"></div>
+              </div>
+                <div class="numbers">
+                  <span class="name" title="Wins">DDΔ/Round</span>
                   <span class="value">780</span>
                 </div>
                 <div class="bottom"></div>
@@ -261,7 +276,7 @@
             <div class="stat-align-expandable">
               <div class="wrapper">
                 <div class="numbers">
-                  <span class="name" title="Wins">Wins</span>
+                  <span class="name" title="Wins">Kills</span>
                   <span class="value">780</span>
                 </div>
                 <div class="bottom"></div>
@@ -270,7 +285,7 @@
             <div class="stat-align-expandable">
               <div class="wrapper">
                 <div class="numbers">
-                  <span class="name" title="Wins">Wins</span>
+                  <span class="name" title="Wins">Deaths</span>
                   <span class="value">780</span>
                 </div>
                 <div class="bottom"></div>
@@ -279,7 +294,7 @@
             <div class="stat-align-expandable">
               <div class="wrapper">
                 <div class="numbers">
-                  <span class="name" title="Wins">Wins</span>
+                  <span class="name" title="Wins">Assists</span>
                   <span class="value">780</span>
                 </div>
                 <div class="bottom"></div>
@@ -288,7 +303,7 @@
             <div class="stat-align-expandable">
               <div class="wrapper">
                 <div class="numbers">
-                  <span class="name" title="Wins">Wins</span>
+                  <span class="name" title="Wins">KAD Ratio</span>
                   <span class="value">780</span>
                 </div>
                 <div class="bottom"></div>
@@ -297,7 +312,7 @@
             <div class="stat-align-expandable">
               <div class="wrapper">
                 <div class="numbers">
-                  <span class="name" title="Wins">Wins</span>
+                  <span class="name" title="Wins">Kills/Round</span>
                   <span class="value">780</span>
                 </div>
                 <div class="bottom"></div>
@@ -306,7 +321,7 @@
             <div class="stat-align-expandable">
               <div class="wrapper">
                 <div class="numbers">
-                  <span class="name" title="Wins">Wins</span>
+                  <span class="name" title="Wins">First Kills</span>
                   <span class="value">780</span>
                 </div>
                 <div class="bottom"></div>
@@ -315,7 +330,7 @@
             <div class="stat-align-expandable">
               <div class="wrapper">
                 <div class="numbers">
-                  <span class="name" title="Wins">Wins</span>
+                  <span class="name" title="Wins">First Deaths</span>
                   <span class="value">780</span>
                 </div>
                 <div class="bottom"></div>
@@ -324,7 +339,7 @@
             <div class="stat-align-expandable">
               <div class="wrapper">
                 <div class="numbers">
-                  <span class="name" title="Wins">Wins</span>
+                  <span class="name" title="Wins">Multikills(5k)</span>
                   <span class="value">780</span>
                 </div>
                 <div class="bottom"></div>
@@ -333,16 +348,7 @@
             <div class="stat-align-expandable">
               <div class="wrapper">
                 <div class="numbers">
-                  <span class="name" title="Wins">Wins</span>
-                  <span class="value">780</span>
-                </div>
-                <div class="bottom"></div>
-              </div>
-            </div>
-            <div class="stat-align-expandable">
-              <div class="wrapper">
-                <div class="numbers">
-                  <span class="name" title="Wins">Wins</span>
+                  <span class="name" title="Wins">Flash Assists</span>
                   <span class="value">780</span>
                 </div>
                 <div class="bottom"></div>
@@ -354,8 +360,87 @@
       </div>
 
       <div class="side-data">
-        <div class="t-side"></div>
-        <div class="ct-side"></div>
+        <section class="t-side">
+          <header class="card-header">
+          <h1>Terrorists</h1>
+          <span class="card-description">14,631 Rounds Played</span>
+        </header>
+        <div class="side-card-body">
+          <div class="stat-align-expandable">
+              <div class="wrapper">
+                <div class="numbers">
+                  <span class="name" title="Wins">First Deaths</span>
+                  <span class="value">780</span>
+                </div>
+                <div class="bottom"></div>
+              </div>
+            </div>
+            <div class="stat-align-expandable">
+              <div class="wrapper">
+                <div class="numbers">
+                  <span class="name" title="Wins">First Deaths</span>
+                  <span class="value">780</span>
+                </div>
+                <div class="bottom"></div>
+              </div>
+            </div>
+            <div class="stat-align-expandable">
+              <div class="wrapper">
+                <div class="numbers">
+                  <span class="name" title="Wins">First Deaths</span>
+                  <span class="value">780</span>
+                </div>
+                <div class="bottom"></div>
+              </div>
+            </div>
+            <div class="stat-align-expandable">
+              <div class="wrapper">
+                <div class="numbers">
+                  <span class="name" title="Wins">First Deaths</span>
+                  <span class="value">780</span>
+                </div>
+                <div class="bottom"></div>
+              </div>
+            </div>
+            <div class="stat-align-expandable">
+              <div class="wrapper">
+                <div class="numbers">
+                  <span class="name" title="Wins">First Deaths</span>
+                  <span class="value">780</span>
+                </div>
+                <div class="bottom"></div>
+              </div>
+            </div>
+            <div class="stat-align-expandable">
+              <div class="wrapper">
+                <div class="numbers">
+                  <span class="name" title="Wins">First Deaths</span>
+                  <span class="value">780</span>
+                </div>
+                <div class="bottom"></div>
+              </div>
+            </div>
+            <div class="stat-align-expandable">
+              <div class="wrapper">
+                <div class="numbers">
+                  <span class="name" title="Wins">First Deaths</span>
+                  <span class="value">780</span>
+                </div>
+                <div class="bottom"></div>
+              </div>
+            </div>
+            <div class="stat-align-expandable">
+              <div class="wrapper">
+                <div class="numbers">
+                  <span class="name" title="Wins">First Deaths</span>
+                  <span class="value">780</span>
+                </div>
+                <div class="bottom"></div>
+              </div>
+            </div>
+        </div>
+        </section>
+        <section class="ct-side"></section>
       </div>
 
       <div class="match-history"></div>
@@ -701,6 +786,15 @@ table.maps td{
   display: grid;
   grid-gap: .75rem;
   grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  padding: .625rem;
+  background-color: var(--color-surface-2);
+}
+
+.side-card-body{
+  margin-top: 20px;
+  display: grid;
+  grid-gap: .75rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   padding: .625rem;
   background-color: var(--color-surface-2);
 }
