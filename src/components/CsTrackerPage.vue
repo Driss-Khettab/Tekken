@@ -54,9 +54,7 @@
         </div>
       </div>
     </header>
-
     <div class="content">
-
       <div class="side-card">
         <table class="maps">
           <thead>
@@ -440,7 +438,86 @@
             </div>
         </div>
         </section>
-        <section class="ct-side"></section>
+        <section class="ct-side">
+          <header class="card-header">
+          <h1>Terrorists</h1>
+          <span class="card-description">14,631 Rounds Played</span>
+        </header>
+        <div class="side-card-body">
+          <div class="stat-align-expandable">
+              <div class="wrapper">
+                <div class="numbers">
+                  <span class="name" title="Wins">First Deaths</span>
+                  <span class="value">780</span>
+                </div>
+                <div class="bottom"></div>
+              </div>
+            </div>
+            <div class="stat-align-expandable">
+              <div class="wrapper">
+                <div class="numbers">
+                  <span class="name" title="Wins">First Deaths</span>
+                  <span class="value">780</span>
+                </div>
+                <div class="bottom"></div>
+              </div>
+            </div>
+            <div class="stat-align-expandable">
+              <div class="wrapper">
+                <div class="numbers">
+                  <span class="name" title="Wins">First Deaths</span>
+                  <span class="value">780</span>
+                </div>
+                <div class="bottom"></div>
+              </div>
+            </div>
+            <div class="stat-align-expandable">
+              <div class="wrapper">
+                <div class="numbers">
+                  <span class="name" title="Wins">First Deaths</span>
+                  <span class="value">780</span>
+                </div>
+                <div class="bottom"></div>
+              </div>
+            </div>
+            <div class="stat-align-expandable">
+              <div class="wrapper">
+                <div class="numbers">
+                  <span class="name" title="Wins">First Deaths</span>
+                  <span class="value">780</span>
+                </div>
+                <div class="bottom"></div>
+              </div>
+            </div>
+            <div class="stat-align-expandable">
+              <div class="wrapper">
+                <div class="numbers">
+                  <span class="name" title="Wins">First Deaths</span>
+                  <span class="value">780</span>
+                </div>
+                <div class="bottom"></div>
+              </div>
+            </div>
+            <div class="stat-align-expandable">
+              <div class="wrapper">
+                <div class="numbers">
+                  <span class="name" title="Wins">First Deaths</span>
+                  <span class="value">780</span>
+                </div>
+                <div class="bottom"></div>
+              </div>
+            </div>
+            <div class="stat-align-expandable">
+              <div class="wrapper">
+                <div class="numbers">
+                  <span class="name" title="Wins">First Deaths</span>
+                  <span class="value">780</span>
+                </div>
+                <div class="bottom"></div>
+              </div>
+            </div>
+        </div>
+        </section>
       </div>
 
       <div class="match-history"></div>
@@ -473,6 +550,10 @@
   display: flex;
   flex-direction: column;
   min-height: 20rem;
+}
+
+.main-content{
+  margin-left: 2rem;
 }
 
 .banner {
@@ -691,7 +772,7 @@ table.maps td{
 
 .highlighted-giants{
   background: linear-gradient(to right, #333333 0%, #8e7333 100%);
-
+  padding-bottom: 2rem;
 }
 
 .profile-highlighted-content_stats{
@@ -705,7 +786,13 @@ table.maps td{
   position: relative;
   grid-gap: .5rem;
   margin: 1rem 1rem 0;
-  box-shadow: 0 3px 6px #00000026
+  /* box-shadow: 0 3px 6px #00000026; */
+  bottom: 2rem;
+  padding-bottom: 2rem;
+}
+
+.giant-stats .stat-giant-expandable {
+  box-shadow: 0 3px 6px #00000026;
 }
 
 .stat-giant-expandable{
@@ -785,17 +872,27 @@ table.maps td{
 .data-main{
   display: grid;
   grid-gap: .75rem;
-  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
   padding: .625rem;
+  background-color: var(--color-surface-2);
+  border-radius: var(--border-radius);
+  margin-top: -2rem;
+}
+
+.card-body{
   background-color: var(--color-surface-2);
 }
 
 .side-card-body{
-  margin-top: 20px;
   display: grid;
-  grid-gap: .75rem;
+  grid-gap: 2rem;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   padding: .625rem;
   background-color: var(--color-surface-2);
+}
+
+.side-data{
+  display: flex;
+  gap: 2.5rem;
 }
 </style>
