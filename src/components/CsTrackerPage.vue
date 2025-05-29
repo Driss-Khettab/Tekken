@@ -520,7 +520,17 @@
         </section>
       </div>
 
-      <div class="match-history"></div>
+      <div class="match-history">
+        <header class="card-header">
+          <h2>Match History</h2>
+          <span class="card-description">Showing recent matches.</span>
+          <a class="matches-header-button">
+          <button class="all-matches-button">All Matches</button>
+          <svg data-v-20584358="" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="all-matches-svg"><g><path d="M12 4L10.59 5.41L16.17 11H4V13H16.17L10.59 18.59L12 20L20 12L12 4Z" fill="currentColor"></path></g></svg>
+          </a>
+
+        </header>
+      </div>
       </div> 
     </div>
 
@@ -894,5 +904,24 @@ table.maps td{
 .side-data{
   display: flex;
   gap: 2.5rem;
+}
+
+.all-matches-button{
+  all: unset;
+  cursor: pointer;
+  color: #f29224;
+  font-size: .875rem;
+  font-weight: 800;
+  margin-left: 28rem;
+}
+
+.all-matches-svg{
+  all: unset;
+  cursor: pointer;
+  color: #f29224;
+  font-size: .875rem;
+  font-weight: 800;
+  margin-left: 28rem;
+  width: 1.5rem;
 }
 </style>
