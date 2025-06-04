@@ -569,6 +569,7 @@
 .banner {
   position: relative;
   border-radius: 1rem;
+  width: 100%;
 }
 
 .player-info {
@@ -648,7 +649,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 89%;  
   background: rgba(49, 54, 77, 0.9);
   color: white;
   display: flex;
@@ -882,7 +883,7 @@ table.maps td{
 .data-main{
   display: grid;
   grid-gap: .75rem;
-  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   padding: .625rem;
   background-color: var(--color-surface-2);
   border-radius: var(--border-radius);
