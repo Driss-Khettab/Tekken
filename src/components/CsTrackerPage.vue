@@ -528,8 +528,59 @@
           <button class="all-matches-button">All Matches</button>
           <svg data-v-20584358="" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="all-matches-svg"><g><path d="M12 4L10.59 5.41L16.17 11H4V13H16.17L10.59 18.59L12 20L20 12L12 4Z" fill="currentColor"></path></g></svg>
           </a>
-
         </header>
+
+        <div class="matches-card-body">
+          <div class="matches-card-header">
+
+            <div class="left">
+              <div class="value">
+                <span class="wins">11W</span>
+                 - 
+                <span class="losses">9L</span>
+                 -
+                <span class="draws">0D</span>
+                <span class="muted"> (55%)</span>
+              </div>
+              <div class="title">
+                <span class="highlight">1.31 K/D</span>
+                 |
+                <span data-v-75c76717="" class="highlight">90 ADR</span>
+              </div>
+            </div>  
+
+            <div class="right">
+              <div class="stats-mini-ct">
+                <div class="ct-img">
+                  <img class="stat-mini-img" src="../assets/ct side.webp">
+                </div>
+                <div class="ct-round-kd">
+                   <div class="title">
+                    114RW - 103RL
+                     <span class="muted">(53%)</span>
+                    </div>
+                   <div class="subtitle">K/D 1.97</div>
+                </div>
+              </div>
+
+              <div class="stats-mini-t">
+                <div class="t-img">
+                  <img class="stat-mini-img" src="../assets/t side.webp">
+                </div>
+                 <div class="ct-round-kd">
+                   <div class="title">
+                    114RW - 103RL
+                     <span class="muted">(53%)</span>
+                    </div>
+                   <div class="subtitle">K/D 1.97</div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="matches-timeline"></div>
+        </div>
       </div>
       </div> 
     </div>
@@ -924,5 +975,89 @@ table.maps td{
   font-weight: 800;
   margin-left: 28rem;
   width: 1.5rem;
+}
+
+.matches-card-body{
+  background-color: rgb(30, 32, 47, 1);
+}
+
+.matches-card-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.left{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 3rem;
+  padding: 0 1rem;
+  border-radius: var(--border-radius);
+  background: #31364d;
+  box-shadow: 0 3px 5px #1e202f;
+  width: fit-content;
+  margin-right: .5rem;
+}
+
+.value{
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.wins{
+  color: #16e5b4;
+}
+
+.losses{
+  color: #ef5351;
+}
+
+.draws{
+  color: #cbb765;
+}
+
+.muted{
+  color: var(--color-text-secondary);
+}
+
+.title{
+  font-size: .875rem;
+  font-weight: 500;
+}
+
+.highlight{
+  color :#16e5b4;
+}
+
+.right{
+  display: flex;
+}
+
+.stats-mini-ct, .stats-mini-t{
+  border-bottom: 2px solid #B2CEEF;
+  align-items: center;
+  display: flex;
+  margin-left: 1rem;
+  margin-right: .5rem;
+  padding: .25rem 0;
+  width: fit-content;
+}
+
+.stat-mini-img{
+  border-radius: var(--border-radius);
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: .5rem;
+  vertical-align: middle;
+}
+
+.title{
+  font-weight: 500;
+}
+
+.subtitle{
+  color: var(--color-text-secondary);
+  font-size: .75rem;
+  font-weight: 500;
 }
 </style>
