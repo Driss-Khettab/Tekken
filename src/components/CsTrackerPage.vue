@@ -530,9 +530,9 @@
           </a>
         </header>
 
+        <div class="v3-card">
         <div class="matches-card-body">
           <div class="matches-card-header">
-
             <div class="left">
               <div class="value">
                 <span class="wins">11W</span>
@@ -579,7 +579,84 @@
             </div>
 
           </div>
-          <div class="matches-timeline"></div>
+          <div class="matches-timeline">
+          <div class="timeline-match">
+            <span class="timeline-match-timestamp">5d ago</span>
+            <span class="timeline-match-score">
+              <span class="timeline-match-score-winner">2</span>
+              :
+              <span class="timeline-match-score-loser">7</span>
+            </span>
+            <span class="timeline-match-kd">K/D 1.7</span>
+          </div>
+          <div class="timeline-match">
+            <span class="timeline-match-timestamp">5d ago</span>
+            <span class="timeline-match-score">
+              <span class="timeline-match-score-winner">2</span>
+              :
+              <span class="timeline-match-score-loser">7</span>
+            </span>
+            <span class="timeline-match-kd">K/D 1.7</span>
+          </div>
+          <div class="timeline-match">
+            <span class="timeline-match-timestamp">5d ago</span>
+            <span class="timeline-match-score">
+              <span class="timeline-match-score-winner">2</span>
+              :
+              <span class="timeline-match-score-loser">7</span>
+            </span>
+            <span class="timeline-match-kd">K/D 1.7</span>
+          </div>
+          <div class="timeline-match">
+            <span class="timeline-match-timestamp">5d ago</span>
+            <span class="timeline-match-score">
+              <span class="timeline-match-score-winner">2</span>
+              :
+              <span class="timeline-match-score-loser">7</span>
+            </span>
+            <span class="timeline-match-kd">K/D 1.7</span>
+          </div>
+          <div class="timeline-match">
+            <span class="timeline-match-timestamp">5d ago</span>
+            <span class="timeline-match-score">
+              <span class="timeline-match-score-winner">2</span>
+              :
+              <span class="timeline-match-score-loser">7</span>
+            </span>
+            <span class="timeline-match-kd">K/D 1.7</span>
+          </div>
+          <div class="timeline-match">
+            <span class="timeline-match-timestamp">5d ago</span>
+            <span class="timeline-match-score">
+              <span class="timeline-match-score-winner">2</span>
+              :
+              <span class="timeline-match-score-loser">7</span>
+            </span>
+            <span class="timeline-match-kd">K/D 1.7</span>
+          </div>
+          <div class="timeline-match">
+            <span class="timeline-match-timestamp">5d ago</span>
+            <span class="timeline-match-score">
+              <span class="timeline-match-score-winner">2</span>
+              :
+              <span class="timeline-match-score-loser">7</span>
+            </span>
+            <span class="timeline-match-kd">K/D 1.7</span>
+          </div>
+          <div class="timeline-match">
+            <span class="timeline-match-timestamp">5d ago</span>
+            <span class="timeline-match-score">
+              <span class="timeline-match-score-winner">2</span>
+              :
+              <span class="timeline-match-score-loser">7</span>
+            </span>
+            <span class="timeline-match-kd">K/D 1.7</span>
+          </div>
+          </div>
+        </div>
+        </div>
+        <div class="v3-card">
+          
         </div>
       </div>
       </div> 
@@ -941,6 +1018,14 @@ table.maps td{
   margin-top: -2rem;
 }
 
+.v3-card{
+  container-type: inline-size;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+}
+
 .card-body{
   background-color: var(--color-surface-2);
 }
@@ -965,6 +1050,7 @@ table.maps td{
   font-size: .875rem;
   font-weight: 800;
   margin-left: 28rem;
+  margin-top: 2.3rem;
 }
 
 .all-matches-svg{
@@ -1059,5 +1145,50 @@ table.maps td{
   color: var(--color-text-secondary);
   font-size: .75rem;
   font-weight: 500;
+}
+
+.matches-timeline{
+  background-color: var(--color-surface-2);
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  margin-bottom: .125rem;
+  overflow: hidden;
+}
+
+.timeline-match{
+  border-bottom: .25rem solid #7399bf;
+  display: flex;
+  flex-direction: column;
+  margin-right: .25rem;
+  padding: .5rem 1.5rem;
+  text-align: center;
+}
+
+.timeline-match-timestamp{
+  font-size: .75rem;
+  font-weight: 700;
+  opacity: .5;
+}
+
+.timeline-match-score{
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding: .75rem 0 .5rem;
+  white-space: nowrap;
+}
+
+.timeline-match-score-winner{
+  color: var(--color-text-primary);
+}
+
+.timeline-match-score-loser{
+  color: #ef5351
+}
+
+.timeline-match-kd{
+  border-top: 1px solid hsla(0, 0%, 100%, 25);
+  font-size: .875rem;
+  font-weight: 500;
+  padding-top: .75rem;
 }
 </style>
