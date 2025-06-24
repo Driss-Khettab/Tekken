@@ -655,8 +655,46 @@
           </div>
         </div>
         </div>
-        <div class="v3-card">
-          
+        <div class="v3-card-body">
+            <div class="card-list">
+              <div class="card-list-group">
+                <div class="card-list-group-title">
+                  <div class="v3-card-header">
+                    <div class="match-row-left">
+                      <div class="match-row-block">
+                        <div class="match-header-date">
+                          Jun 18
+                          <span class="badge">4</span>
+                        </div>
+                        <div class="match-header-summary">
+                          <div>
+                            2
+                            <span class="text-increment">W</span>
+                          </div>
+                           • 
+                           <div>
+                            1
+                            <span class="text-decrement">L</span>
+                           </div>
+                           •
+                           <div>
+                            1
+                            <span class="text-gold">D</span>
+                           </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="match-row-right">
+                      <div class="match-row-block">
+                        <div class="match-row-text-label">K/D</div>
+                        <div class="match-row-text-value-increment">1.3</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-list-group-entries"></div>
+            </div>
+          </div>
         </div>
       </div>
       </div> 
@@ -1191,4 +1229,105 @@ table.maps td{
   font-weight: 500;
   padding-top: .75rem;
 }
+
+.v3-card-body{
+  gap: 0;
+  padding: 0;
+  border-radius: 1rem;
+  border-width: 1px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 2rem;
+  /* border-color: rgb(var(--color-surface-2)); */
+  /* background-color:rgb(30,32,47,1); */
+}
+
+.card-list-group-title{
+
+}
+
+.v3-card-header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background:linear-gradient(to right, #31364d);
+}
+
+.match-row-left{
+  padding: 1.5rem;
+}
+
+.match-row-block{
+  display: flex;
+  flex-direction: column;
+  gap: .125rem;
+  min-width: 4rem
+}
+
+.match-header-date{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 700;
+  font-size: .875rem;
+  line-height: 1;
+}
+
+.badge{
+  margin-left: 1rem;
+  font-weight: 500;
+  line-height: 1;
+  background-color: var(--color-surface-2);
+  border-radius: .625rem;
+  display: inline-flex;
+  font-size: .75rem;
+  padding: .25rem .5rem;
+  text-align: center;
+  text-overflow: clip;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.match-header-summary{
+  display: flex;
+  flex-direction: row;
+  font-weight: 500;
+  gap: .5rem;
+}
+
+.text-increment{
+  color: rgb(94 231 144 / 1);
+}
+
+.text-decrement{
+  color: rgb(228 72 93 / 1);
+}
+
+.text-gold{
+  color: rgb(203 183 101 / 1);
+}
+
+.match-row-right{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 1rem;
+  padding-right: 1.5rem;
+}
+
+.match-row-text-label{
+  color: var(--color-text-secondary);
+  font-size: .875rem;
+  font-weight: 500;
+}
+
+.match-row-text-value-increment{
+  color:rgb(94 231 144 / 1);
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
 </style>
