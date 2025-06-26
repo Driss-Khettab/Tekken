@@ -692,7 +692,38 @@
                     </div>
                   </div>
                 </div>
-                <div class="card-list-group-entries"></div>
+                <div class="card-list-group-entries">
+                <div class="cs2-match-row-section-left">
+                  <div class="cs2-info-left">
+                    <div class="cs2-map-image">
+                      <img class="match-map-img" src="">
+                    </div>
+                    <div class="cs2-map-info">
+                      <div class="match-row-label">
+                        Competitive •
+                        <span>1d ago</span>
+                      </div>
+                      <div class="match-row-value">Nuke</div>
+                    </div>
+                  </div>
+                  <div class="cs2-info-right">
+                    <div class="cs2-rank">
+                      <img class="rank-image" src="">
+                    </div>
+                    <div class="cs2-score">
+                      <div class="match-score-value">
+                        <span class="text-increment">7</span>
+                        <span>:</span>
+                        <span class="text-decrement">13</span>
+                      </div>
+                    </div>
+                    <div class="cs2-trs">
+                      <img class="" src="">
+                      <div class="font-medium">145</div>
+                    </div>
+                  </div>
+                </div>
+                </div>
             </div>
           </div>
         </div>
